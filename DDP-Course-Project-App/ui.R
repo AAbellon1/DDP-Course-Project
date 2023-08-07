@@ -1,7 +1,7 @@
 library(shiny)
 
 shinyUI(fluidPage(
-    titlePanel("Examine U.S. House Arrests Data"),
+    titlePanel("Examine U.S. Arrests Data"),
     sidebarLayout(
         sidebarPanel(
             h3("Choose which variables to examine the relationship of!"),
