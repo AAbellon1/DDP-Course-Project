@@ -1,0 +1,39 @@
+---
+title: "DDP Course Project"
+author: "AAbellon1"
+date: "2023-08-07"
+output:
+  ioslides_presentation: default
+  slidy_presentation: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Introduction
+The purpose of this Shiny App is to examine the relationships that may be present between each of the 4 variables found within the U.S. Arrests dataset. **In the app, the user may choose which 2 specific variables they want to examine the relationship of.** From here, a **scatterplot** of the points will be generated, along with a **trendline** and its corresponding **regression equation** which has been calculated for. 
+
+## Overview of U.S. Arrests Dataset
+The variables found in the dataset consist of the following:
+
+```{r dataset, echo=FALSE, message=FALSE}
+vars = colnames(USArrests)
+```
+1. **`r vars[1]`:** Murder arrests (per 100,000)
+2. **`r vars[2]`:** Assault arrests (per 100,000)
+3. **`r vars[3]`:** Percent urban population
+4. **`r vars[4]`:** Rape arrests (per 100,000)
+
+## Sample Insights
+Examples of insights that can be gained from this Shiny App include:
+
+* Correlation Between Assault and Murder Rates
+* Urban Population and Crime Rates
+* Rape and Assault Rates Analysis
+
+## Try Out the App Here!
+* The Shiny application can be accessed here: https://m1habs-michael0andre-abellon.shinyapps.io/DDP-Course-Project-App/
+
+* The GitHub repository containing the Shiny App server and UI code can be accessed here:
+https://github.com/AAbellon1/DDP-Course-Project
